@@ -9,20 +9,29 @@ import { AgentSelectorComponent } from './agent-selector/agent-selector.componen
 import { WidgetRegistryService } from "./customWidgetRegistry";
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-
+import { WidgetnouComponent } from './widgetnou/widgetnou.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {TasktwoComponent} from './tasktwo/tasktwo.component';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormdemoComponent,
-    AgentSelectorComponent
+    AgentSelectorComponent,
+    WidgetnouComponent,
+    TasktwoComponent
   ],
   imports: [
     SchemaFormModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    MatCheckboxModule 
+    MatCheckboxModule,
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule
   ],
   providers: [{provide: WidgetRegistry, useClass: WidgetRegistryService}],
   bootstrap: [AppComponent]

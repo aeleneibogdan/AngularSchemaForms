@@ -1,12 +1,37 @@
 <h3>Alocare agenti</h3>
 <hr>
 <div class= "wrapper-selector">
-    <h4>Judet</h4>
-    <div class = "tabel-agenti">
-        <div class="tabel-agenti-cell" *ngFor="let agent of agents">
-            <span>{{agent}}</span>
-            <mat-checkbox (click)="handleSelected(agent)"></mat-checkbox>
+    <div class="wrapper">
+        <h4>Agenti:</h4>  
+        <hr>
+        <div class="selected-agents">
+            <span *ngFor="let selectedAgents of selectedAgents">{{selectedAgents}} </span>
         </div>
+        <div class = "tabel-agenti">
+            
+            <div class="tabel-agenti-cell" *ngFor="let agent of agents">
+                <span>{{agent}}</span>
+                <mat-checkbox (click)="handleSelected(agent)"></mat-checkbox>
+            </div>
+        </div>
+        <button (click) = "logAgents()">Afisare agenti</button>
     </div>
-    <button (click) = "logAgents()"></button>
+    
+    <div class="wrapper">
+        <h4>Judet:</h4>  
+        <hr>
+        <div class="selected-agents">
+            <span *ngFor="let selectedAgents of selectedAgents">{{selectedAgents}} </span>
+        </div>
+        <div class = "tabel-agenti">
+            
+            <div class="tabel-agenti-cell" *ngFor="let agent of agents">
+                <span>{{agent}}</span>
+                <mat-checkbox (click)="handleSelected(agent)"></mat-checkbox>
+            </div>
+        </div>
+        <button (click) = "logAgents()">Afisare agenti</button>
+    </div>
+
+    
 </div>

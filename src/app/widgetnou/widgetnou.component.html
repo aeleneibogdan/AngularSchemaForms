@@ -1,0 +1,79 @@
+<h1>TASK 1 </h1>
+<hr>
+
+<h3>Grupa de produse</h3>
+<div class="wrapper-selector">   
+    <div class="wrapper-produse">
+       <div class="tabel-produse">
+            <div >
+                <span>{{tabelHeaders[0]}}</span>
+                </div>
+                <div>
+                    <span>{{tabelHeaders[1]}}</span>
+                </div>
+       </div>
+       <div class="produse" *ngFor="let products of rowProducts">
+           <div>
+               <span>{{products.firstColumn}}</span>
+            </div>
+            <div>
+                <span>{{products.Discount}}</span>
+            </div>
+
+       </div>
+    </div>
+
+</div>
+<br>
+<h3>Lista de produse</h3>
+<div class="wrapper-selector-two">
+    <div class="wrapper-produse">
+        <div class="tabel-produse-two">
+             <div >
+                 <span>{{tabelHeaders2[0]}}</span>
+            </div>
+            <div>
+                <span>{{tabelHeaders2[1]}}</span>
+            </div>
+            <div>
+                <span>{{tabelHeaders2[2]}}</span>
+            </div>
+            <div>
+                <span>{{tabelHeaders2[3]}}</span>
+            </div>
+            <div>
+                <span> </span>
+            </div>
+        </div>
+        <div class="produse-two" *ngFor="let products2 of rowProducts2">
+            <div>
+                <span>{{products2.firstColumnList}}</span>
+             </div>
+             <div>
+                 <span>{{products2.secondColumnList}}</span>
+             </div>
+             <div>
+                <span>{{products2.Discount}}</span>
+             </div>
+             <div>
+                 <span>{{products2.fourthColumnList}}</span>
+             </div>
+             <div>
+                <button (click)="handleClickOnDelete(counter)" _ngcontent-vtb-c524="" mat-button="" class="mat-focus-indicator case-delete-button mat-button mat-button-base" aria-describedby="cdk-describedby-message-18" cdk-describedby-host="">
+                    <span class="mat-button-wrapper">
+                            <mat-icon _ngcontent-vtb-c524="" role="img" svgicon="delete" class="mat-icon notranslate medium_icon mat-icon-no-color" aria-hidden="true">
+                                <svg width="50%" height="50%" viewBox="2 1 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4H13" stroke="#E81516" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                    <path d="M4.33325 3.99967V2.66634C4.33325 2.31272 4.47373 1.97358 4.72378 1.72353C4.97383 1.47348 5.31296 1.33301 5.66659 1.33301H8.33325C8.68688 1.33301 9.02601 1.47348 9.27606 1.72353C9.52611 1.97358 9.66659 2.31272 9.66659 2.66634V3.99967M11.6666 3.99967V13.333C11.6666 13.6866 11.5261 14.0258 11.2761 14.2758C11.026 14.5259 10.6869 14.6663 10.3333 14.6663H3.66659C3.31296 14.6663 2.97382 14.5259 2.72378 14.2758C2.47373 14.0258 2.33325 13.6866 2.33325 13.333V3.99967H11.6666Z" stroke="#E81516" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                </svg>
+                           </mat-icon>
+                    </span>
+                    <div matripple="" class="mat-ripple mat-button-ripple">
+                    </div>
+                    <div class="mat-button-focus-overlay">
+                    </div>
+                </button>
+            </div>
+</div>
